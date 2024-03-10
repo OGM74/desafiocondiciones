@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="../img/sticker1.jpg" alt="200px" width="200px">
+    <input class="oso" type="text">
+    <img src="../img/sticker2.jpg" alt="200px" width="200px">
+    <input class="rana" type="text">
+    <img src="../img/sticker3.jpg" alt="200px" width="200px">
+    <input class="perro" type="text">
+    <button onclick="
+    var parrafo= document.querySelector('p')
+var numero1= document.querySelector('.oso').value
+var numero2= document.querySelector('.rana').value
+var numero3= document.querySelector('.perro').value
+resultado = Number(numero1) + Number(numero2) + Number(numero3)
+if(resultado<=10){
+    parrafo.innerHTML = ('Llevas'    + resultado     + 'stickers')
+resultado>10
+}else{
+    parrafo.innerHTML = 'Llevas demasiados stickers'
+
+}
+
+    ">Verificar</button>
+
+    <p class="mensaje"></p>
+
+
+
+</body>
+
+</html>
